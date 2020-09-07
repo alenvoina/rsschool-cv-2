@@ -44,9 +44,9 @@ I have experience in page layout and experience in creating course project.
 
 ## Education
 
-1. Course of C#
-2. Offline learning(YouTube, books and website).
-3. College
+1. Course of C#;
+2. Offline learning(YouTube, books and website);
+3. College.
 
 ## English
 
