@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Junior Fontend Developer</h4>
+        </div>
+    </header>
+    <main>
+        <section class="section container">
+            <div class="section__info">
+                <div class="img">
+                    <img height="170" width="220" src="img/photo.jpeg" alt="photo">
+                </div>
+                <div>
+                    <p class="paragraf-name">Alexandr Mikholap</p>
+                    <p>email: alxandr.mikholap@gmail.com</p>
+                    <p>discord: alx&r</p>
+                </div>
+        </section>
+        <section class="section container">
+            <h3>Summary</h3>
+            <p>My goals are to learn js and web developing. I want to work in it-organization and it is the reason why i tried to learn more.</p>
+        </section>
+        <section class="section container">
+            <h3>Skills</h3>
+            <ul>
+                <li>C#/.Net</li>
+                <li>ASP.NET Core</li>
+                <li>EntityFramework/EntityFramework Core</li>
+                <li>JS</li>
+                <li>HTML/CSS/Less</li>
+            </ul>
+        </section>
+        <section class="section container">
+            <h3>Code Example</h3>
+            <pre>
+              document.querySelector("#btn-input").addEventListener("click", (e) => {
+                e.preventDefault();
+            
+                const messageInput = document.querySelector("#text-input").value;
+                const userName = document.querySelector("#name-input").value;
+                if (messageInput != "") {
+                    const data = new FormData();
+                    data.append("name", userName);
+                    data.append("message", messageInput);
+                    
+                    document.querySelector("#text-input").value = '';
+                    fetch("home/SendMessage", {
+                        method: "POST",
+                        body: data
+                    }).catch(error => console.error("Error", error));
+                }
+            });
+            </pre>
+        </section>
+        <section class="section container">
+            <h3>Experience</h3>
+            <p>I have experience in page layout and experience in creating course project.</p>
+        </section>
+        <section class="section container">
+            <h3>Education</h3>
+            <ul>
+                <li>Course of C#</li>
+                <li>Offline learning(YouTube, books and website)</li>
+                <li>College</li>
+            </ul>
+        </section>
+        <section class="section container">
+            <h3>English</h3>
+            <p>My english level is A2.</p>
+        </section>
+    </main>
+</body>
+
+</html>
